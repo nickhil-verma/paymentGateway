@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div id="qrcode" class="qrcode-container"></div>
+            <div class="card-header">
+                <div class="btn-wrap"><button class="btn btn primary">Show QR</button></div>
+                <h2 class="card-title">NIKHIL KUMAR</h2>
+                <p class="card-subtitle">vermanick75-1@okhdfcbank</p>
+            </div>
+            <form id="generate-form" class="form-group">
+                <div class="input-group">
+                    <span class="input-group-text">₹</span>
+                    <input type="number" min="99" max="100000" class="form-control" placeholder="Enter Amount" id="amount-input">
+                </div>
+                <a  id="dynamic-link"><button type="button" class="btn btn-primary" id="proceed-btn">Proceed to Pay</button></a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
